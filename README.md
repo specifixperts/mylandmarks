@@ -1,5 +1,5 @@
 
-Welcome
+<h1>Welcome</h1>
 
 My Landmarks retrieves landmark images from Fickr and FourSquare based on a specified location
 API Key
@@ -10,19 +10,18 @@ To be able to access the api you require key, which you can get from here. Provi
     in: header
 
 
-End Points
-Locations
+<h1>End Points</h1>
+<h2>Locations</h2>
 
-Description:
+<b>Description:</b>
 Returns a list of countries and cities with latitude and longitude values.
 
 Cities are retrieved from GeoDB Cities API
 Countries are retrieved from Rest Countries
-List
-
+<b>List</b>
 https://mylapi.swe-nam.com/Locations
 Retrieve all the saved locations countries and cities.
-Response Fields:
+<b>Response Fields:</b>
 
     name: string | name of the location.
     latitude: string | latitude.
