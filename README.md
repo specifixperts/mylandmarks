@@ -139,7 +139,7 @@ This endpoint returns photos searched using a locationid of type GUID. Search fo
     photoId: guid | photo unique identifier.
     locationName: string | name of the location
 
-<h3>Details<h3>
+<h3>Details</h3>
 
 https://mylapi.swe-nam.com/Photos/Photo/{id}
 This endpoint returns the details of a photo by passing in the id
