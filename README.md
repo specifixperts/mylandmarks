@@ -18,9 +18,11 @@ Returns a list of countries and cities with latitude and longitude values.
 
 Cities are retrieved from GeoDB Cities API
 Countries are retrieved from Rest Countries
+<br/>
 <b>List</b><br/>
 https://mylapi.swe-nam.com/Locations
 Retrieve all the saved locations countries and cities.
+<br/>
 <b>Response Fields:</b><br/>
 
     name: string | name of the location.
@@ -40,7 +42,7 @@ Search for a city using a name or part of the name.
 <b>Parameters:</b><br/>
 
     name: string
-
+<br/>
 <b>Response Fields:</b><br/>
 
     name: string | name of the location.
@@ -51,7 +53,7 @@ Search for a city using a name or part of the name.
     dateCreated: datetime | date and time the location was saved in the database
     dateLastEdited: datetime | date and time when the location record was last edited.
     deleted: bool | true if the location is to be marked as deleted.
-
+<br/>
 <h3>Countries</h3>
 
 https://mylapi.swe-nam.com/Locations/Countries/{name}
@@ -76,10 +78,11 @@ Search for a country using a name or part of the name.
 
 https://mylapi.swe-nam.com/Locations/All/{name}
 Search both cities and countries using a name or part of the name.
+<br/>
 <b>Parameters:</b><br/>
 
     name: string
-
+<br/>
 <b>Response Fields:</b><br/>
 
     name: string | name of the location.
@@ -95,10 +98,10 @@ Search both cities and countries using a name or part of the name.
 
 <b>Description:</b><br/>
 Returns a list of list of landmark images from either Flickr or FourSquare.
-
+<br/>
 <b>FourSquare</b><br/>
 FourSquare organises its images based on venues registered in their database. Each photo comes in reference to a venue. For this exercise I used a free registration which limits the images to only one per venue and to get landmark images I had to search for landmark venues, which are not a lot. So there are not a lot of FourSquare results.
-
+<br/>
 <b>Flickr</b><br/>
 Flickr is a bit more straight forward when is comes to searching for images, there is quite and array of options to filter by. For the purposes of this exercise the best way to get landmarks that i found was to used tags. Flickr would give a lot more results from almost anywhere in the world.
 <br/>
@@ -106,6 +109,7 @@ Flickr is a bit more straight forward when is comes to searching for images, the
 
 https://mylapi.swe-nam.com/Photos/{location}
 Retrieve saved photos from the given location. You can search using a partial name.
+<br/>
 <b>Parameters:</b><br/>
 
     location: string
@@ -126,7 +130,7 @@ This endpoint returns photos searched using a locationid of type GUID. Search fo
 <b>Parameters:</b><br/>
 
     locationid: guid
-
+<br/>
 <b>Response Fields:</b><br/>
 
     locationid: guid | unique identifier for the photo's location in the database.
@@ -139,6 +143,7 @@ This endpoint returns photos searched using a locationid of type GUID. Search fo
 
 https://mylapi.swe-nam.com/Photos/Photo/{id}
 This endpoint returns the details of a photo by passing in the id
+<br/>
 <b>Parameters:</b><br/>
 
     id: guid
